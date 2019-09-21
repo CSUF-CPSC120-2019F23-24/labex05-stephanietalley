@@ -28,7 +28,8 @@ int main()
   f2 *= 0.01;
 
   // TODO#1 add comment describing what's happening
-  std::cout << "\n**comment**" << std::endl;
+  std::cout << "\nThe 8 byte manage to keep its value, however the 4 byte" << std::endl;
+  std::cout << "became slightly off and thus lost its precision." << std::endl;
   std::cout << sizeof(d2) << " bytes, value: " << d2 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f2 << std::endl;
 
@@ -36,7 +37,8 @@ int main()
   f2 *= 0.1;
 
   // TODO#2 add comment describing what's happening
-  std::cout << "\n**comment**" << std::endl;
+  std::cout << "\nThe 8 byte was still able to maintain its value, however the" << std::endl;
+  std::cout << "4 byte could no longer maintain the precision of the value." << std::endl;
   std::cout << sizeof(d2) << " bytes, value: " << d2 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f2 << std::endl;
 
@@ -44,7 +46,8 @@ int main()
   float f3 = 3.5E38;
 
   // TODO#3 add comment describing what happened
-  std::cout << "\n**comment**" << std::endl;
+  std::cout << "\nThe value for the 4 byte was much too large that it resulted" << std::endl;
+  std::cout << "in an error of infinite." << std::endl;
   std::cout << std::setprecision(1);
   std::cout << sizeof(d3) << " bytes, value: " << d3 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f3 << std::endl;
